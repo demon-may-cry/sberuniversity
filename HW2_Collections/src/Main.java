@@ -15,5 +15,18 @@ public class Main {
         unique.entrySet().stream()
                 .sorted(Map.Entry.<String, Integer>comparingByValue().reversed())
                 .forEach(System.out::println);
+
+        PhoneBook phoneBook = new PhoneBook();
+
+        phoneBook.add("89134567384", "Petrov");
+        phoneBook.add("89094362726", "Ivanov");
+        phoneBook.add("89036338976", "Ivanov");
+        phoneBook.add("89187851390", "Sidorov");
+        phoneBook.add("89187851390", "Kovalev");
+
+        System.out.println(phoneBook.get("Petrov"));
+        System.out.println(phoneBook.get("Ivanov"));
+        System.out.println(phoneBook.get("Sidorov"));
+        System.out.println(phoneBook.get("Kovalev"));
     }
 }
