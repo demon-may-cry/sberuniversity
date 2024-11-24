@@ -1,30 +1,27 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class PhoneBook {
-    HashMap<String, String> phoneBook = new HashMap<>();
+    HashMap<String, List<String>> phoneBook = new HashMap<>();
 
-    public void add(String phone, String name) {
-        if (phoneBook.containsKey(phone)) {
-            phoneBook.replace(phone, phoneBook.get(phone), name);
+    public void add(String name, String phone) {
+        if (phoneBook.containsKey(name)) {
+            List<String> phoneList = phoneBook.get(name);
+            phoneList.add(phone);
         } else {
-            phoneBook.put(phone, name);
+            List<String> phoneList = new ArrayList<>();
+            phoneList.add(phone);
+            phoneBook.put(name, phoneList);
         }
     }
 
-    public Set<String> get(String name) {
-        if (phoneBook.containsValue(name)) {
-            Set<String> contactByName = new TreeSet<>();
-            List<String> list = new ArrayList<>();
-            for (Map.Entry<String, String> entry : phoneBook.entrySet()) {
-                if (entry.getValue().equals(name)) {
-                    list.add(entry.getKey());
-                }
-            }
-            if (!list.isEmpty()) {
-                contactByName.add(name + " - " + list);
-            }
+    public List<String> get(String name) {
+        List<String> contactByName = new ArrayList<>();
+        if (phoneBook.containsKey(name)) {
+            contactByName.add(name + " - " + phoneBook.get(name));
             return contactByName;
         }
-        return null;
+        return new ArrayList<>();
     }
 }

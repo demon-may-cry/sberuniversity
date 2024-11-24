@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Main {
@@ -18,11 +20,10 @@ public class Main {
 
         PhoneBook phoneBook = new PhoneBook();
 
-        phoneBook.add("89134567384", "Petrov");
-        phoneBook.add("89094362726", "Ivanov");
-        phoneBook.add("89036338976", "Ivanov");
-        phoneBook.add("89187851390", "Sidorov");
-        phoneBook.add("89187851390", "Kovalev");
+        phoneBook.add("Petrov", "89134567384");
+        phoneBook.add("Ivanov", "89094362726");
+        phoneBook.add("Ivanov", "89036338976");
+        phoneBook.add("Sidorov", "89187851390");
 
         System.out.println(phoneBook.get("Petrov"));
         System.out.println(phoneBook.get("Ivanov"));
