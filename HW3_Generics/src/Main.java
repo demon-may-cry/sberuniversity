@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         CountMap countMap = new CountMapImpl();
@@ -33,6 +35,43 @@ public class Main {
         System.out.println("Вернуть Map ключ - добавленный элемент, значение - количество его добавлений: ");
         countMap.toMap(countMap2.toMap());
         printMap(countMap2);
+
+        List<Integer> list = CollectionUtils.newArrayList();
+        List<Integer> list2 = CollectionUtils.newArrayList();
+        List<Integer> list3 = CollectionUtils.newArrayList();
+
+        list.add(1);
+        list.add(7);
+        list.add(5);
+        list.add(3);
+        list.add(9);
+
+        list2.add(9);
+        list2.add(2);
+        list2.add(4);
+        list2.add(6);
+        list2.add(1);
+
+        list3.add(9);
+        list3.add(2);
+        list3.add(4);
+        list3.add(6);
+        list3.add(1);
+
+        System.out.println("Вернуть индекс по значению: " + CollectionUtils.indexOf(list, 7));
+        System.out.println("Вернуть значения по лимиту: " + CollectionUtils.limit(list, 3));
+        CollectionUtils.removeAll(list, list2);
+        System.out.println("Удалить все совпадающие элементы: " + list);
+        CollectionUtils.addAll(list3, list);
+        System.out.println("Добавить все элементы из одного списка в другой: " + list);
+        System.out.println("Вернуть true, если первый лист содержит хотя бы 1 элемент второго: "
+                + CollectionUtils.containsAny(list, list2));
+        System.out.println("Вернуть true, если первый лист содержит все элементы второго: "
+                + CollectionUtils.containsAll(list, list3));
+        System.out.println("Вернуть лист, содержащий элементы из входного листа в диапазоне от min до max: "
+                + CollectionUtils.range(list, 3, 6));
+        System.out.println("Вернуть отсортированный лист, содержащий элементы из входного листа в диапазоне от min до max: "
+                + CollectionUtils.range(list, 2, 7, Integer::compareTo));
     }
 
     private static void printMap(CountMap<Integer> countMap) {
