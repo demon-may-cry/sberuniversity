@@ -11,7 +11,7 @@
 
 [Домашнее задание №3 Обобщенные классы – Generics](https://github.com/demon-may-cry/sberuniversity/tree/main?tab=readme-ov-file#домашнее-задание-3-обобщенные-классы--generics)
 
-[Домашнее задание №4 Обработка исключений – Exception handling]()
+[Домашнее задание №4 Обработка исключений – Exception handling](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-4-обработка-исключений--exception-handling)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
