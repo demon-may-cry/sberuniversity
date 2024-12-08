@@ -1,7 +1,15 @@
 package ru.sberuniversity.exception;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ReadContent readContent = new ReadContent();
+       while (true) {
+           System.out.println("Введите URL:");
+           String input = new Scanner(System.in).nextLine();
+           readContent.readContent(input);
+       }
     }
 }
