@@ -5,11 +5,11 @@
 ### Описание
 В данном репозитории предоставлены выполненные домашние работы.
 ### Оглавление
-[Домашнее задание №1 Знакомство с Java - main Java classes and packages](https://github.com/demon-may-cry/sberuniversity/edit/main/README.md#домашнее-задание-1-знакомство-с-java---main-java-classes-and-packages)
+[Домашнее задание №1 Знакомство с Java - main Java classes and packages](https://github.com/demon-may-cry/sberuniversity/tree/main?tab=readme-ov-file#домашнее-задание-1-знакомство-с-java---main-java-classes-and-packages)
 
-[Домашнее задание №2 Коллекции Java – collection framework](https://github.com/demon-may-cry/sberuniversity/edit/main/README.md#домашнее-задание-2-коллекции-java--collection-framework)
+[Домашнее задание №2 Коллекции Java – collection framework](https://github.com/demon-may-cry/sberuniversity/tree/main?tab=readme-ov-file#домашнее-задание-2-коллекции-java--collection-framework)
 
-[Домашнее задание №3 Обобщенные классы – Generics](https://github.com/demon-may-cry/sberuniversity/edit/main/README.md#домашнее-задание-3-обобщенные-классы--generics)
+[Домашнее задание №3 Обобщенные классы – Generics](https://github.com/demon-may-cry/sberuniversity/tree/main?tab=readme-ov-file#домашнее-задание-3-обобщенные-классы--generics)
 
 []()
 
