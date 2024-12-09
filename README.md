@@ -154,6 +154,8 @@ public static List range(List list, Object min, Object max, Comparator comparato
 }
 ```
 
+[Выполненое домашнее задание №3](HW3_Generics/src/main/java/ru/sberuniversity/generics)
+
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
 
 ## Домашнее задание №4 _Обработка исключений – Exception handling_
@@ -234,7 +236,7 @@ _TerminalServer_ и _PinValidator_ могут кидать свои собств
    |D. После достижения маркера конца входного потока, но до закрытия самого потока, программа пытаться считать данные.|4. Исключение не произойдёт.|
    
    **Ответ:** A-3, B-1, C-4, D-2
+
+   [Выполненое домашнее задание №4]()
    
    [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
-
-   
