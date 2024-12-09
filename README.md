@@ -36,6 +36,8 @@
    
 Создать два объекта _Child()_, _Child(“Ivan”)_
 
+[Путь к ДЗ](HW1_MainJavaClassesAndPackages/src/main/java/ru/sberuniversity/classesandpackages)
+
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
 
 ## Домашнее задание №2 _Коллекции Java – collection framework_
