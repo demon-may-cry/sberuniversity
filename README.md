@@ -237,6 +237,6 @@ _TerminalServer_ и _PinValidator_ могут кидать свои собств
    
    **Ответ:** A-3, B-1, C-4, D-2
 
-   [Выполненое домашнее задание №4]()
+   [Выполненое домашнее задание №4](HW4_ExceptionHandling)
    
    [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
