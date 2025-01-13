@@ -17,6 +17,8 @@
 
 [Домашнее задание №6 Средства сборки, модульное тестирование - Module, Build tools, Testing](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-6-средства-сборки-модульное-тестирование---module-build-tools-testing)
 
+[Домашнее задание №7 Загрузчик классов – ClassLoaders]()
+
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
 
@@ -395,5 +397,31 @@ public class BeanUtils {
 Написать юнит тесты к классам из данного задания (с помощью JUnit 5 + Mockito)
 
 [Выполненое домашнее задание №6](HW6_ModuleBuildToolsTesting)
+
+[К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
+
+## Домашнее задание №7 _Загрузчик классов – ClassLoaders_
+**Цель:** познакомиться с загрузчиком классов _ClassLoaders_.
+
+**Задание №1:**
+Написать _EncryptedClassloader_.
+Данный класслоадер умеет загружать классы из файлов дешифруя их, если они были зашифрованы. Ваша задача переопределить метод _findClass()_. В нем лоадер считывает зашифрованный массив байт, дешифрует его и превращает в класс (с помощью метода _defineClass()_). На вход класслодер принимает ключ шифрования, рутовую папку, в которой будет искать классы, родительский класслодер. Логика шифрования/дешифрования с использованием ключа может быть любой на ваш вкус (например, каждый считаный байт класса увеличить на определение число).
+
+```
+public class EncryptedClassLoader extends ClassLoader {
+    private final String key;
+    private final File dir;
+
+    public EncryptedClassLoader(String key, File dir, ClassLoader parent) {
+        super(parent);
+        this.key = key;
+        this.dir = dir;
+    }
+
+//TODO findClass
+
+}
+```
+[Выполненое домашнее задание №7](HW7_ClassLoaders/EncryptedClassLoader)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
