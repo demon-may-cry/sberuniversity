@@ -17,7 +17,7 @@
 
 [Домашнее задание №6 Средства сборки, модульное тестирование - Module, Build tools, Testing](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-6-средства-сборки-модульное-тестирование---module-build-tools-testing)
 
-[Домашнее задание №7 Загрузчик классов – ClassLoaders]()
+[Домашнее задание №7 Загрузчик классов – ClassLoaders](https://github.com/demon-may-cry/sberuniversity/tree/main#домашнее-задание-7-загрузчик-классов--classloaders)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
