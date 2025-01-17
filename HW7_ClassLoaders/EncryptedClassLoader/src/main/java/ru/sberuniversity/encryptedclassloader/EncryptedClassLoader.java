@@ -22,7 +22,7 @@ public class EncryptedClassLoader extends ClassLoader {
     }
 
     @Override
-    protected Class<?> findClass(String name) {
+    public Class<?> findClass(String name) {
         File file = new File(dir, name.replace('\\', '.') + ".class");
         try {
             byte[] byteEncrypted = Files.readAllBytes(file.toPath());
