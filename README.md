@@ -19,7 +19,7 @@
 
 [Домашнее задание №7 Загрузчик классов – ClassLoaders](https://github.com/demon-may-cry/sberuniversity/tree/main#домашнее-задание-7-загрузчик-классов--classloaders)
 
-[Домашнее задание №8 Сериализация – Serialization]()
+[Домашнее задание №8 Сериализация – Serialization](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-8-сериализация--serialization)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
@@ -473,6 +473,6 @@ interface Service {
     List<String> work(String item);
 }
 ```
-[Выполненое домашнее задание №8](HW7_ClassLoaders/EncryptedClassLoader)
+[Выполненое домашнее задание №8](HW8_Serialization/Serialization)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
