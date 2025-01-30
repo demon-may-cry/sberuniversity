@@ -21,7 +21,7 @@
 
 [Домашнее задание №8 Сериализация – Serialization](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-8-сериализация--serialization)
 
-[Домашнее задание №9 Функциональные интерфейсы – Lambda. Stream API]()
+[Домашнее задание №9 Функциональные интерфейсы – Lambda. Stream API](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-9-функциональные-интерфейсы--lambda-stream-api)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
@@ -521,6 +521,6 @@ public class Streams<T> {
     }
 }
 ```
-[Выполненое домашнее задание №8]()
+[Выполненое домашнее задание №8](HW9_LambdaStreamAPI/LambdaStreamAPI)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
