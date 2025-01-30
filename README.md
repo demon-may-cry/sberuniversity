@@ -21,6 +21,8 @@
 
 [Домашнее задание №8 Сериализация – Serialization](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-8-сериализация--serialization)
 
+[Домашнее задание №9 Функциональные интерфейсы – Lambda. Stream API]()
+
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
 
@@ -474,5 +476,51 @@ interface Service {
 }
 ```
 [Выполненое домашнее задание №8](HW8_Serialization/Serialization)
+
+[К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
+
+## Домашнее задание №9 _Функциональные интерфейсы – Lambda. Stream API_
+**Цель:** познакомиться с функциональными интерфейсами и потоком _Stream API_.
+
+**Задание №1:**
+[Реализовать класс похожий на java.util.stream.Stream](http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html).
+Использование этого класса должно выглядеть примерно так:
+```
+List<Person> someCollection = ...
+
+Map m = Streams.of(someCollection)
+				.filter(p -> p.getAge() > 20)
+				.transform( p -> new Person(p.getAge() + 30)))
+				.toMap(p -> p.getName(), p -> p);
+```
+_Streams.of()_ - статический метод, который принимает коллекцию и создает новый объект _Streams_.
+_filter()_ - оставляет в коллекции только те элементы, которые удовлетворяют условию в лямбде.
+_transform()_ - преобразует элемент в другой.
+_toMap_ - принимает 2 лямбды для создания мапы, в одной указывается, что использовать в качестве ключа, в другой, что в качестве значения.
+После выполнения всех операций коллекция _someCollection_ не должна поменяться.
+Класс надо параметризовать используя правило _PECS_
+```
+public class Streams<T> {
+   public static Streams of(List list) {
+	//add code
+    }
+
+    public Streams filter(........) {
+	//add code
+	return this;
+    }
+
+     public Streams transform(........) {
+	//add code
+	return this;
+    }
+
+     public Map toMap(........) {
+	//add code
+	return this;  
+    }
+}
+```
+[Выполненое домашнее задание №8]()
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
