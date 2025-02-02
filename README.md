@@ -25,7 +25,7 @@
 
 [Домашнее задание №10 Многопоточная работа в Java – MultiThreading (1 часть)](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-10-многопоточная-работа-в-java--multithreading-1-часть)
 
-[Домашнее задание №11 Многопоточная работа в Java – MultiThreading (2 часть)]()
+[Домашнее задание №11 Многопоточная работа в Java – MultiThreading (2 часть)](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-11-многопоточная-работа-в-java--multithreading-2-часть)
 
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
