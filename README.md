@@ -530,7 +530,7 @@ public class Streams<T> {
     }
 }
 ```
-[Выполненое домашнее задание №8](HW9_LambdaStreamAPI/LambdaStreamAPI)
+[Выполненое домашнее задание №9](HW9_LambdaStreamAPI/LambdaStreamAPI)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
 
@@ -600,6 +600,6 @@ public interface ThreadPool {
 1) _FixedThreadPool_ - количество потоков задается в конструкторе и не меняется;
 2) _ScalableThreadPool_ - в конструкторе задается минимальное и максимальное(_int min_, _int max_) число потоков, количество запущенных потоков может быть увеличено от минимального к максимальному, если при добавлении нового задания в очередь нет свободного потока для исполнения этого задания. При отсутствии задания в очереди, количество потоков опять должно быть уменьшено до значения _min_.
 
-[Выполненое домашнее задание №8](HW11_MultiThreading_part2/MultiThreading_part2)
+[Выполненое домашнее задание №11](HW11_MultiThreading_part2/MultiThreading_part2)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
