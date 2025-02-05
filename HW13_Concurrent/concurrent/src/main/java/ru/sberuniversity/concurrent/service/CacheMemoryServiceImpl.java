@@ -15,7 +15,7 @@ public class CacheMemoryServiceImpl implements CacheService {
     }
 
     @Override
-    public ArgsKey getValueArgs(Object[] args) {
+    public synchronized ArgsKey getValueArgs(Object[] args) {
         return switch (countArgs) {
             case 1 -> new ArgsKey(new Object[]{args[0]});
             case 2 -> new ArgsKey(new Object[]{args[1]});

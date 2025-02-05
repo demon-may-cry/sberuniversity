@@ -1,26 +1,34 @@
 package ru.sberuniversity.concurrent;
 
-import ru.sberuniversity.concurrent.service.*;
-import ru.sberuniversity.concurrent.proxy.*;
+import ru.sberuniversity.concurrent.proxy.CacheProxy;
+import ru.sberuniversity.concurrent.service.Service;
+import ru.sberuniversity.concurrent.service.ServiceImpl;
+
+import java.util.concurrent.locks.ReentrantLock;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            CacheProxy cacheProxy = new CacheProxy();
-            Service service = cacheProxy.cache(new ServiceImpl());
+        ReentrantLock lock = new ReentrantLock();
+        CacheProxy cacheProxy = new CacheProxy();
+        Service service = cacheProxy.cache(new ServiceImpl());
 
-            service.doHardWork("work1", 1);
-            service.doHardWork("work2", 2);
-            System.out.println("*******************");
-            service.doHardWork("work1", 1);
-            service.doHardWork("work2", 2);
-            System.out.println("*******************");
-            service.run("work", 1000);
-            service.run("work", 1000);
-            System.out.println("*******************");
-
-        } catch (ClassCastException | InterruptedException ex) {
-            ex.printStackTrace(System.err);
+        for (int i = 0; i < 5; i++) {
+            Thread thread = new Thread(() -> {
+                lock.lock();
+                try {
+                    for (int j = 0; j < 5; j++) {
+                        service.doHardWork("work", 1);
+                        System.out.println(Thread.currentThread().getName() + " завершенной итерации " + j);
+                        Thread.sleep(1000);
+                    }
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace(System.err);
+                } finally {
+                    lock.unlock();
+                }
+            });
+            thread.setName("Thread " + i);
+            thread.start();
         }
     }
 }
