@@ -9,13 +9,16 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class CacheInvocationHandler implements InvocationHandler {
+    ReentrantLock lock;
     private static String keyMame;
     private final Object service;
     private Map<String, CacheService> cacheMap;
 
-    public CacheInvocationHandler(Object service) {
+    public CacheInvocationHandler(Object service, ReentrantLock lock) {
+        this.lock = lock;
         this.service = service;
         initCacheManagers();
     }
@@ -44,6 +47,7 @@ public class CacheInvocationHandler implements InvocationHandler {
                 return method.invoke(service, args);
             }
             CacheService cacheService = cacheMap.get(keyMame);
+            lock.lock();
             if (cacheService.contains(args)) {
                 System.out.printf("Значение имеется в памяти/файле %s -> %s\n", keyMame, cacheService.get(args));
                 return cacheService.get(args);
@@ -55,6 +59,8 @@ public class CacheInvocationHandler implements InvocationHandler {
             return result;
         } catch (ReflectiveOperationException ex) {
             ex.printStackTrace(System.err);
+        } finally {
+            lock.unlock();
         }
         return null;
     }

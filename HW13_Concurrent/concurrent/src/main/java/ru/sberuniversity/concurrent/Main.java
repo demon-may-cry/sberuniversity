@@ -10,11 +10,10 @@ public class Main {
     public static void main(String[] args) {
         ReentrantLock lock = new ReentrantLock();
         CacheProxy cacheProxy = new CacheProxy();
-        Service service = cacheProxy.cache(new ServiceImpl());
+        Service service = cacheProxy.cache(new ServiceImpl(), lock);
 
         for (int i = 0; i < 5; i++) {
             Thread thread = new Thread(() -> {
-                lock.lock();
                 try {
                     for (int j = 0; j < 5; j++) {
                         service.doHardWork("work", 1);
@@ -23,8 +22,6 @@ public class Main {
                     }
                 } catch (InterruptedException ex) {
                     ex.printStackTrace(System.err);
-                } finally {
-                    lock.unlock();
                 }
             });
             thread.setName("Thread " + i);
