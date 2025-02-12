@@ -31,6 +31,8 @@
 
 [Домашнее задание №13 Пакет для многопоточный работы -- java.util.concurrent](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-13-пакет-для-многопоточный-работы----javautilconcurrent)
 
+[Домашнее задание №14 Работа с БД – JDBC]()
+
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
 
@@ -630,5 +632,27 @@ public interface ThreadPool {
 Был применён _synchronized_ для метода _ArgsKey getValueArgs_ и использован класс ReentrantLock.
 
 [Выполненое домашнее задание №13](HW13_Concurrent/concurrent)
+
+[К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
+
+## Домашнее задание №14 _Работа с БД – JDBC_
+**Цель:** познакомиться с средством для работы с хранилищем данных _JDBC_ .
+
+**Задание №1:**
+Разработать продвинутый кэш, который помнит о кэшированных данных после перезапуска приложения.
+
+```
+@interface Cachable {
+Class value() ;
+}
+
+class Calculator {
+@Cachable(H2DB.class) 
+public List fibonachi (int i) {
+// алгоритм
+}
+```
+
+[Выполненое домашнее задание №14]()
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
