@@ -31,7 +31,7 @@
 
 [Домашнее задание №13 Пакет для многопоточный работы -- java.util.concurrent](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-13-пакет-для-многопоточный-работы----javautilconcurrent)
 
-[Домашнее задание №14 Работа с БД – JDBC]()
+[Домашнее задание №14 Работа с БД – JDBC](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-14-работа-с-бд--jdbc)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
@@ -653,6 +653,6 @@ public List fibonachi (int i) {
 }
 ```
 
-[Выполненое домашнее задание №14]()
+[Выполненое домашнее задание №14](HW14_JDBC/jdbc)
 
 [К оглавлению](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#оглавление)
