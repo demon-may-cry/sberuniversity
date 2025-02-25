@@ -35,7 +35,7 @@
 
 [Домашнее задание №15 Фреймворк Spring](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-15-фреймворк-spring)
 
-[Домашнее задание №16 Фреймворк Spring - JDBC, Transactions]()
+[Домашнее задание №16 Фреймворк Spring - JDBC, Transactions](https://github.com/demon-may-cry/sberuniversity/blob/main/README.md#домашнее-задание-16-фреймворк-spring---jdbc-transactions)
 
 ## Домашнее задание №1 _Знакомство с Java - main Java classes and packages_
 **Цель:** познакомится со статическими и нестатическими блоками, определить, как и в какой последовательности вызываются блоки и конструкторы базового класса и наследников.
